@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#008577"
     android:orientation="vertical"
-    tools:context=".SignInUp.login"
+    tools:context=".SignInUp.RegisterActivity"
     android:scrollbarAlwaysDrawVerticalTrack="true">
 
     <RelativeLayout
@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:gravity="center_horizontal"
-            android:text="Account Login"
+            android:text="New User Registration"
             android:textColor="#fff"
             android:textSize="26sp"
             android:textStyle="bold"/>
@@ -45,14 +45,14 @@
 
 
                 <TextView
-                    android:labelFor="@id/text_email"
+                    android:labelFor="@id/text_email1"
                     android:text="email"
                     android:fontFamily="sans-serif-light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
                 <EditText
-                    android:id="@+id/text_email"
+                    android:id="@+id/text_email1"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_email"
@@ -63,7 +63,7 @@
                     android:inputType="textEmailAddress"/>
 
                 <TextView
-                    android:labelFor="@id/edit_text_password"
+                    android:labelFor="@id/edit_text_password1"
                     android:text="password"
                     android:fontFamily="sans-serif-light"
                     android:layout_width="wrap_content"
@@ -74,38 +74,29 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:singleLine="true"
-                    android:id="@+id/edit_text_password"
+                    android:id="@+id/edit_text_password1"
                     android:drawableLeft="@drawable/ic_lock"
                     android:hint="Password"
                     android:inputType="textPassword"/>
 
 
-                <TextView
-                    android:id="@+id/text_view_forget_password"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:paddingTop="5dp"
-                    android:text="Forgot Password?"/>
-
-
                 <Button
-                    android:id="@+id/button_sign_in"
+                    android:id="@+id/button_register"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="22dp"
                     android:background="#d67601"
-                    android:text="Log in"
+                    android:text="Sign Up"
                     android:textAllCaps="false"
                     android:textColor="#fff"
                     android:textSize="18sp"/>
 
                 <TextView
-                    android:id="@+id/text_view_register"
+                    android:id="@+id/text_view_login"
                     android:layout_gravity="center_horizontal"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                     android:textAlignment="center"
-                    android:text="Don't have an account.\nRegister Here"
+                    android:text="Already have an account.\nLogin Here"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
@@ -126,10 +117,10 @@
     </RelativeLayout>
 
     <ProgressBar
-        android:id="@+id/progressbar1"
-        android:visibility="gone"
-        android:layout_centerInParent="true"
+        android:id="@+id/progressbar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
 
 </RelativeLayout>
